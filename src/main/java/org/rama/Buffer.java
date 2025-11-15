@@ -8,7 +8,7 @@ public class Buffer {
         this.buffer = new String[100];
     }
 
-    public void addElement(String string){
+    public  void addElement(String string){
         this.buffer[pos]=string;
         this.pos++;
     }
@@ -17,7 +17,7 @@ public class Buffer {
         return this.buffer[pos];
     }
 
-    public synchronized  void showBuffer(){
+    public  void showBuffer(){
         for (int i = 0; i < this.buffer.length; i++) {
             System.out.println("["+i+"]"+this.buffer[i]);
         }

@@ -8,17 +8,11 @@ public class Clase2 {
         hilo1.start();
         hilo2.start();
 
-
-        try {
-            hilo1.join();
-            hilo2.join();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-
-        for (int i = 0; i < 100; i++) {
+        buffer.showBuffer();
+       /*
+        for (int i = 0; i <= 100; i++) {
             System.out.println(buffer.leer(i));
-        }
+        }*/
 
 
     }

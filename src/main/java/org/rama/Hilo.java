@@ -14,7 +14,7 @@ public class Hilo implements Runnable{
 
     @Override
     public void run() {
-        for (int i = 0; i<100; i++)
-            this.buffer.addElement(this.message+1);
+        for (int i = 0; i<50; i++)
+            this.buffer.addElement(this.message+i);
     }
 }
